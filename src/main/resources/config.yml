@@ -1,0 +1,48 @@
+# MoonTentacles configuration. Run /tentacles reload after editing.
+
+# Players get tentacles on join unless they have switched them off with /tentacles.
+auto-enable-on-join: true
+
+# Remove the tentacles while a player is invisible (potion or command).
+hide-when-invisible: true
+
+# Hide your own tentacles from yourself (other players still see them).
+hide-from-owner: false
+
+# Number of tentacles, 1 to 8. Each one is a chain of display entities,
+# so entity count per player = tentacles x segments.
+tentacles: 4
+
+# Segments per tentacle. More is smoother but costs more packets.
+segments: 14
+
+# Tentacle length in blocks.
+length: 1.75
+
+# Radius of the base of each tentacle in blocks. It tapers towards the tip.
+thickness: 0.09
+
+# How much the tentacles wave. 0 = rigid, 1 = default, 2 = lively.
+sway: 1.0
+
+# How strongly the tentacles trail behind when you move. 0 = none.
+inertia: 0.15
+
+# Client-side smoothing in ticks. 2 is smooth, 1 is snappier.
+interpolation-ticks: 2
+
+# Render distance multiplier for the display entities.
+view-range: 1.5
+
+# Segments from this point along the tentacle (0.0 base to 1.0 tip) glow
+# at full brightness, so the tips shine in the dark like moonlight.
+glow-from: 0.55
+
+# Moon palette, base to tip: night black, slate blue, silver, moon white, moonlight glow.
+# Any full-block material works.
+materials:
+  - BLACK_CONCRETE
+  - BLUE_TERRACOTTA
+  - LIGHT_GRAY_CONCRETE
+  - WHITE_CONCRETE
+  - SEA_LANTERN

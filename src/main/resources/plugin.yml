@@ -1,0 +1,17 @@
+name: MoonTentacles
+version: '${project.version}'
+main: dev.moontentacles.MoonTentaclesPlugin
+api-version: '26.2'
+description: Smooth moon-coloured tentacles attached to the back of every player.
+commands:
+  tentacles:
+    description: Toggle your moon tentacles.
+    usage: /tentacles [on|off|toggle] [player] | /tentacles reload
+    aliases: [tent]
+permissions:
+  moontentacles.use:
+    description: Allows toggling your own tentacles.
+    default: true
+  moontentacles.admin:
+    description: Allows reloading the config and toggling other players.
+    default: op
